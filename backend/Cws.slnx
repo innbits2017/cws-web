@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Cws.Api/Cws.Api.csproj" />
+  <Project Path="Cws.Worker/Cws.Worker.csproj" />
+</Solution>

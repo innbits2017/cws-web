@@ -39,3 +39,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# .NET build files
+**/bin/
+**/obj/
+
+# Database backups
+**/backups/
+*.dump
+*.backup
+
+# Local development files
+.vs/
+*.user
+*.suo
