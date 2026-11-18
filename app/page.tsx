@@ -1,6 +1,7 @@
 
 "use client";
 
+import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 import {
   getBatches,
@@ -353,15 +354,13 @@ export default function Home() {
                 </p>
               </div>
 
-              <button
-                onClick={() =>
-                  alert("New Batch functionality will be implemented next.")
-                }
-                className="inline-flex h-10 items-center gap-2 rounded-lg bg-[#0755b8] px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-[#06469a] hover:shadow-md"
+              <Link
+                href="/batch/new"
+                className="inline-flex h-10 items-center justify-center gap-2 rounded-lg bg-[#0755b8] px-5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#06469a] hover:shadow-md active:translate-y-0"
               >
-                <span className="text-lg">+</span>
-                New Batch
-              </button>
+                <span className="text-xl leading-none">+</span>
+                <span>New Batch</span>
+              </Link>
             </div>
 
             {/* Summary cards */}
